@@ -4,9 +4,10 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"comments": "The '--output-public-path=/build/' dev server switch is used to rebuild on changes before updating browser",
+		"clean": "del /q /s /f build",
 		"build": "webpack",
-		"dev": "npm run build & webpack-dev-server --output-public-path=/build/"
+		"rebuild": "npm run clean & npm run build",
+		"start": "npm run rebuild & webpack-dev-server --output-public-path=/build/"
 	},
 	"keywords": [],
 	"author": "",
