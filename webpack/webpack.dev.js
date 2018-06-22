@@ -5,6 +5,7 @@ module.exports = merge(common, {
 	mode: "development",
 	devtool: "eval",
 	devServer: {
+		watchContentBase: true,
 		port: 4000
 	}
 });
