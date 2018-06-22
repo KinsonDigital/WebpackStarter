@@ -1,0 +1,20 @@
+{
+	"name": "webpack-quick-tutorial",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"comments": "The '--output-public-path=/build/' dev server switch is used to rebuild on changes before updating browser",
+		"build": "webpack",
+		"dev": "npm run build & webpack-dev-server --output-public-path=/build/"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {},
+	"devDependencies": {
+		"webpack": "^4.12.0",
+		"webpack-cli": "^3.0.8",
+		"webpack-dev-server": "^3.1.4"
+	}
+}
